@@ -1,3 +1,4 @@
+import CONFIG from 'data/config';
 import { useState, useEffect } from 'react';
 import styled from 'styled-components/macro';
 
@@ -7,6 +8,9 @@ const StyledClocks = styled.div`
 `;
 const StyledClock = styled.div`
   margin: 0 0 4vw;
+  &:last-of-type {
+    margin: 0;
+  }
 `;
 const StyledTime = styled.div`
   display: flex;
@@ -37,23 +41,14 @@ export function Clocks() {
 
   return (
     <StyledClocks>
-      <StyledClock>
-        <StyledTime>
-          {new Intl.DateTimeFormat('en-US', {
-            timeStyle: 'medium',
-          }).format(currentDateTime)}
-        </StyledTime>
-        <StyledLocation>Local</StyledLocation>
-      </StyledClock>
-      <StyledClock>
-        <StyledTime>
-          {new Intl.DateTimeFormat('en-US', {
-            timeStyle: 'short',
-            timeZone: 'America/New_York',
-          }).format(currentDateTime)}
-        </StyledTime>
-        <StyledLocation>New York</StyledLocation>
-      </StyledClock>
+      {CONFIG.clocks.map(({ name, parameters }) => (
+        <StyledClock>
+          <StyledTime>
+            {new Intl.DateTimeFormat(...parameters).format(currentDateTime)}
+          </StyledTime>
+          <StyledLocation>{name}</StyledLocation>
+        </StyledClock>
+      ))}
     </StyledClocks>
   );
 }

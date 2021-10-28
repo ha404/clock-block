@@ -1,0 +1,23 @@
+{
+  "clocks": [
+    {
+      "name": "Local",
+      "parameters": [
+        "en-US",
+        {
+          "timeStyle": "medium"
+        }
+      ]
+    },
+    {
+      "name": "New York",
+      "parameters": [
+        "en-US",
+        {
+          "timeStyle": "short",
+          "timeZone": "America/New_York"
+        }
+      ]
+    }
+  ]
+}
