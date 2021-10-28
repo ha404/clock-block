@@ -20,7 +20,7 @@ const StyledAutolock = styled.a`
 
 function App() {
   function handleClickAutolock() {
-    window.location.href = 'prefs:root=DISPLAY&path=AUTOLOCK';
+    window.location.href = 'App-Prefs:root=DISPLAY&path=AUTOLOCK';
   }
 
   return (
