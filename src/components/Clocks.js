@@ -41,11 +41,13 @@ export function Clocks() {
 
   return (
     <StyledClocks>
-      {CONFIG.clocks.map(({ name, parameters }) => (
+      {CONFIG.clocks.map(({ name, dateTimes }) => (
         <StyledClock>
-          <StyledTime>
-            {new Intl.DateTimeFormat(...parameters).format(currentDateTime)}
-          </StyledTime>
+          {dateTimes.map((parameters) => (
+            <StyledTime>
+              {new Intl.DateTimeFormat(...parameters).format(currentDateTime)}
+            </StyledTime>
+          ))}
           <StyledLocation>{name}</StyledLocation>
         </StyledClock>
       ))}
