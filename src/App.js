@@ -3,7 +3,7 @@ import { Clocks } from 'components/Clocks';
 
 const StyledApp = styled.div`
   min-height: 100vh;
-  padding: 1vw;
+  padding: 4vw;
   background: #111;
 `;
 
