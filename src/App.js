@@ -15,13 +15,18 @@ const StyledAutolock = styled.a`
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 `;
 
 function App() {
+  function handleClickAutolock() {
+    window.location.href = 'App-prefs://prefs:root=DISPLAY&path=AUTOLOCK';
+  }
+
   return (
     <StyledApp>
       <Clocks />
-      <StyledAutolock href="prefs:root=DISPLAY&path=AUTOLOCK">
+      <StyledAutolock onClick={handleClickAutolock}>
         iPad Auto-Lock 🔒
       </StyledAutolock>
     </StyledApp>
