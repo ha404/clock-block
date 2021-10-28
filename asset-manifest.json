@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/clock-block/static/js/main.dc70f02e.chunk.js",
+    "main.js.map": "/clock-block/static/js/main.dc70f02e.chunk.js.map",
+    "runtime-main.js": "/clock-block/static/js/runtime-main.47c13982.js",
+    "runtime-main.js.map": "/clock-block/static/js/runtime-main.47c13982.js.map",
+    "static/css/2.679831fc.chunk.css": "/clock-block/static/css/2.679831fc.chunk.css",
+    "static/js/2.5ffa4329.chunk.js": "/clock-block/static/js/2.5ffa4329.chunk.js",
+    "static/js/2.5ffa4329.chunk.js.map": "/clock-block/static/js/2.5ffa4329.chunk.js.map",
+    "static/js/3.62f36724.chunk.js": "/clock-block/static/js/3.62f36724.chunk.js",
+    "static/js/3.62f36724.chunk.js.map": "/clock-block/static/js/3.62f36724.chunk.js.map",
+    "index.html": "/clock-block/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/clock-block/static/css/2.679831fc.chunk.css.map",
+    "static/js/2.5ffa4329.chunk.js.LICENSE.txt": "/clock-block/static/js/2.5ffa4329.chunk.js.LICENSE.txt",
+    "static/media/EricssonGA628.00f2c15d.woff2": "/clock-block/static/media/EricssonGA628.00f2c15d.woff2",
+    "static/media/EricssonGA628.e38b432c.woff": "/clock-block/static/media/EricssonGA628.e38b432c.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47c13982.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.5ffa4329.chunk.js",
+    "static/js/main.dc70f02e.chunk.js"
+  ]
+}
